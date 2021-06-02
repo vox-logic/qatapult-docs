@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Quick start
 
 The Quiz Generation API follows a webhook approach to deliver quizzes. This is because the time it takes to generate a quiz varies greatly with the size of the input. You can find exact details on each request/response with examples in the [API spec](https://quizgen.io/api/spec). But you can use this guide to start integrating immediately.
@@ -12,7 +16,7 @@ Use your API key as a `Bearer` token in all of your requests for authenticating 
 
 The example below shows a simple request using the axios library for requesting a quiz generation. This request generates a quiz using the transcription from a YouTube video. Methods are available for generating from various sources. We're always adding more sources for generation, please check the Generation Sources page for more details.
 
-```javascript
+```js
 import axios from "axios";
 
 const options = {
