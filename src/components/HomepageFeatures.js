@@ -4,32 +4,34 @@ import styles from './HomepageFeatures.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'Generates quizzes in a flash',
     Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        With EureQA quizzes can now be generated seamlessly, which is
+        convenient for such a busy world.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Easy to integrate',
     Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Easy to integrate into an already existing app/service. Just create a 
+        developer account <a href="https://qg-dashboard.netlify.app/">here</a> and
+        headover to the <a href="https://quizgen-docs.netlify.app/docs/intro/">docs</a> for 
+        getting started
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Supports data from multiple sources',
     Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Sources such as a <code>YouTube</code> video, <code>Web-page</code>
+        and <code>File</code> upto 1 GB could be used to generate the quizzes
       </>
     ),
   },
