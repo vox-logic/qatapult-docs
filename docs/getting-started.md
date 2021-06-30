@@ -89,68 +89,6 @@ axios --request POST \
 </TabItem>
 </Tabs>
 
-<Tabs
-groupId="one"
-  defaultValue="curl"
-  values={[
-    { label: 'curl', value: 'curl', },
-    { label: 'fetch', value: 'fetch', },
-    { label: 'axios', value: 'axios', },
-  ]
-}>
-<TabItem value="curl">
-
-```shell
-curl --request POST \
-  --url https://api.qaapi.io/v1/generate/text \
-  --header 'Authorization: Bearer *access_token_here*' \
-  --header 'Content-Type: application/json' \
-  --data '{
-	"text": "*your_source_content*", etc...
-}'
-```
-
-</TabItem>
-<TabItem value="fetch">
-
-```javascript
-fetch("https://api.qaapi.io/v1/generate/text", {
-  method: "POST",
-  headers: {
-    "Content-Type": "application/json",
-    Authorization: `Bearer ${access_token}`,
-  },
-  body: JSON.stringify({
-    source: "YOUTUBE",
-    vid: "12345678910",
-    numQuestions: 10,
-  }),
-})
-  .then((response) => response.json())
-  .then((response) => {
-    console.log(response);
-  })
-  .catch((err) => {
-    console.error(err);
-  });
-```
-
-</TabItem>
-<TabItem value="axios">
-
-```shell
-axios --request POST \
-  --url https://api.qaapi.io/v1/generate/text \
-  --header 'Authorization: Bearer *access_token_here*' \
-  --header 'Content-Type: application/json' \
-  --data '{
-	"text": "*your_source_content*", etc...
-}'
-```
-
-</TabItem>
-</Tabs>
-
 ## Receiving the Quiz
 
 To receive the quiz when when it's done, you need to set up a webhook on your `dashboard`. If you're testing the integration locally, we recommend using a [ngrok](https://ngrok.com), a tool that gives you a publicly available URL that tunnels traffic to your local server. You can also use [glitch](https://glitch.com) for quick prototyping. Once you've setup your webhook with a public URL, you're ready to receive your quizzes!
